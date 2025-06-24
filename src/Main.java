@@ -2,8 +2,9 @@
 public class Main {
 
 	public static void main(String[] args) {
-		int owe = 17;
-		System.out.println("You owe: $" + owe + " for the avocado");
+		double total = 10;
+		String message = “You owe ” + total + “ dollars”;
+		System.out.println(message);
 		
 		//Order of operations determines when we do math
 		//and when we concatenate
@@ -14,13 +15,14 @@ public class Main {
 		System.out.println("You owe: $" + (owe1 + owe2));
 		
 		//Demo escape sequences
-		String quote = "\"I'm significant!\", yelled the speck of dust.";
+		String quote = "\“I\’m hungry\“,\n\tsaid Molly.";
 		System.out.println(quote);
 		
-		System.out.println("Hello\n\tWorld");
-		
-		System.out.println(2 + "Hello " + (2 + 3));
-		System.out.println("Sincerely,\nAvocado");
+
+		//Understanding Check
+		String str = 1 + 2 + “hello” + 3 + 4;
+		System.out.println(“\tThe \’answer\’ is\n” + str);
+
 
 
 	}
